@@ -14,11 +14,17 @@ public class Cell {
 	/** Constructor to initialise this cell with the specified row and col */
 	public Cell(int row, int col) {
 		
-		// TODO: Initialise the variables row, col 
+		// TODO: DONE Initialise the variables row, col 
+		
+		// Using the "this" word helps it come from the defined variables
 
+		this.row = row; 
 		
+		this.col = col; 
 		
-		//TODO: call the method that sets the cell content to EMPTY
+		//TODO: DONE call the method that sets the cell content to EMPTY
+		
+		clear(); // Calls the clear method within the constructor
 		 
 	}
 	
@@ -47,7 +53,9 @@ public class Cell {
 	/** Set this cell's content to EMPTY */
 	public void clear() {
 		
-		// TODO: Set the value of content to Empty (Remember this is an enum)
+		// TODO: DONE Set the value of content to Empty (Remember this is an enum)
+		
+		content = Player.Empty; // Sets the content of the cell to be Player.Empty or nothing in the cell
 
 		
 	}
